@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+  } */
+
+  @font-face{
+      font-family: 'Vazir-FD';
+      src: url(./font/Vazir-FD.woff);
+  } 
+  @font-face{
+      font-family: 'Vazir';
+      src: url(./font/Vazir.woff);
+  }
+  @font-face{
+    font-family: 'BRoya';
+    src: url(./font/pixelboy-BRoya.woff);
+}
+@font-face{
+    font-family: 'BTitr-Bold';
+    src: url(./font/pixelboy-BTitrBold.woff);
+}
+@font-face{
+    font-family: 'Shams';
+    src: url(./font/Shabnam-FD.woff);
+}
+.jalaliMonth{
+    font-family: 'Shams';
+    font-size: 17px!important;
+    font-weight: bold!important;
+    color: #d04514!important;
+    
+}
+
+.jalaliYear{
+    font-size: 17px!important;
+    font-weight: bold!important;
+    font-family: 'Shams';
+    color: #d04514!important;
+    
+}
+
+
+.dates{
+    display: inline-block;
+   
+}
+
+
+
+
+.HeaderDates{
+    display: inline-block; 
+    margin-bottom: 5px;
+    font-weight: bold!important;
+    font-size: 15px!important;
+    
+}
+
+.month{
+    font-size: 80%!important;
+    font-family: 'BRoya';
+   
+}
+
+
+
+
+.header{
+    width: 400px;
+    height: 40px;
+    padding: 10px 0 0;
+    text-align: center;
+    font-weight:bold;
+    font-size: 20px;
+    float: right;
+    position: relative;
+    bottom: 3px;
+    
+
+}
+.dayHeader{
+    width: 320px;
+    border-radius: 4px;
+    font-size: 90%;
+    margin-bottom: 6px;
+    margin-right: 20px;
+    background: #555!important;
+    color: #fff!important;
+    box-shadow: none!important;
+    clear: both;
+    font-family: 'Vazir';
+    font-size: 15px;
+    float: right;
+}
+  /* font-family: "SDF",Tahoma,Helvetica,Arial,sans-serif; */
+
+
+
+
+
+
+.day{
+    font-size: 60%;
+    font-family: 'Vazir';
+    float: inherit;
+    width: 14.28%;
+    border: 2px solid transparent;
+    padding: 4px 0;
+    padding-left: 19px;
+}
+
+
+.cell{
+    display: block;
+    width: 41px;
+    height: 40px;
+    color : black;
+    text-align: center;
+    float: right;
+    border: 2px solid transparent;
+    margin: 2px!important;
+    /* padding: 4px!important; */
+    /* background: none!important; */
+    font-weight: bold!important;
+    font-family: 'Vazir-FD';
+    font-size: 15px!important; 
+}
+
+
+.next{
+    padding:2px;
+    /* text-align: left; */
+    float: left;
+    margin-left: 5em;
+
+    
+    
+}
+.before{
+    padding:2px;
+    /* text-align: right; */
+    float: right;
+    margin-right: 2em;
+    
+}
+
+/* 
+.right{
+   
+    margin-right: 1em;
+    padding:10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.left{
+    float: left;
+    margin-left: 5em;
+    padding:10px;
+    text-align: center;
+
+} */
+
+
+
+
+.row{
+    margin-right: 20px;
+   
+    clear: both;
+    display: table;
+    float: right;
+   
+
+}
+
+
+.holiday{
+    background-color: #F8F8F8!important;
+}
+
+.icon{
+    color: #ff5722;
+    top: 3.50px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.icon2{
+    color: #d04514;
+    font-size: 12px;
+    top: 4.50px;
+    margin: 0 3px;
+    /* margin-left: -7px; */
+    cursor: pointer;
+
+}
+
+
+.cell :hover{
+    /* border: 2px solid #ff5722; */
+    border-radius: 3px;
+    /* width: 45px;
+    height: 45px; */
+    transition: width .5s e;
+    background-color: rgb(255, 168, 124);
+}
+
+.selected {
+background-color:  #d04514;
+color: snow !important;
+/* box-shadow: inset 0 0 5px 3px green ; */
+border-radius: 3px;
+box-shadow: 0px 8px 5px -5px #888;
+
+}
+
+.jalali{
+margin-top: 9px !important;
+
+}
+
+
+.drop-month{
+    text-decoration: none;
+    text-align: center ;
+    padding: 6px 10px;
+    /* min-width: 180px; */
+    max-width: 250px;
+    background-color: #fff;
+    color: #d04514;
+    /* margin-right: 120px; */
+    float: right;
+    display: inline-block;
+    font-size: 80%!important;
+    font-family: 'BRoya';
+    
+    
+}
+.drop-menu{
+    /* background-color: rebeccapurple; */
+    min-width: 180px;
+    max-width: 320px;
+    /* position: relative; */
+    left: 60px;
+    top: 70px;
+    box-shadow: 5px 8px 5px -5px #888;
+}
+
+.drop-menu2{
+    min-width: 180px;
+    max-width: 320px;
+    /* height: 20px;
+    padding: 60px;
+    background-color: white;
+    border-radius: 3px; */
+    /* position: relative;
+    left: 60px; */
+}
+
+
+.drop-month :hover{
+text-decoration: none !important;
+color: #fff !important;
+}
+
+
+.addon-year{
+  font-weight: 20%;
+  font-size: 13px;
+  font-family: "BRoya"; 
+  background-color: #ff5722;
+  color: #F8F8F8; 
+}
+
+.input-year{
+border: 20px solid #ff5722;
+background-color: #ff5722;
+}
