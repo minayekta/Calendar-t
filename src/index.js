@@ -26,26 +26,15 @@ convertMonth(number){
   let data=["فروردین","اردیبهشت","خرداد","تیر","مرداد","شهریور","مهر","آبان","آذر","دی","بهمن","اسفند"];
   return data[number -1];
 }
-// OnMonthClick(){
-//   this.setState({
-//     onClickMonth: true
-//   });
-// console.log("THIS A TEST CLICKMONTH:", this.state.onClickMonth)
-// }
 
 render(){
   return(
     <div className="header">
-          
         <div className="left HeaderDates next" >
-            {/* <span className="next "  > &#8592;</span>             */}
             <i className="glyphicon glyphicon-arrow-left icon"  onClick={this.props.handleNext} ></i>
-          
             <span className="month"> ماه بعد </span>
         </div>
         <div className="dates">
-    
-
         <a class="dropdown" href="#"  data-toggle="dropdown"   id= "123" aria-expanded="false">
           <i className= "glyphicon glyphicon-chevron-down icon2"></i> 
         </a>
@@ -84,14 +73,9 @@ render(){
         </div> 
         <div className="right HeaderDates before"  >
           <span className="month"> ماه قبل </span>
-          <i className="glyphicon glyphicon-arrow-right icon"  onClick={this.props.handlePrev}></i>
-         
-          {/* <span className="before "  ></span>     */}
-      
+          <i className="glyphicon glyphicon-arrow-right icon"  onClick={this.props.handlePrev}></i>      
         </div>
-        
-       
-    </div>
+       </div>
     )
   
 }
@@ -100,9 +84,6 @@ render(){
 
 function HeaderRow(props){
     return(
-      // <div className=" container  dayHeader ">
-        // <Card>
-        //     <CardBody>
               <div className="dayHeader">
               <div  className="day">ش</div>
               <div className="day">ی</div>
@@ -112,11 +93,6 @@ function HeaderRow(props){
               <div className="day">پ</div>
               <div className="day">ج</div>
               </div>
-        //     </CardBody>
-        // </Card>
-        
-      // </div>
-
     )
   }
 
@@ -174,13 +150,9 @@ function Cell(props){
       if(today[0] === props.date.year.year && today[1] === props.date.month.month && today[2] === props.date.day.day && props.date.wday.wday === "جمعه"){
           myStyle={
               color : "red",
-              // backgroundColor: "DodgerBlue"
           }
       }else if(today[0] === props.date.year.year && today[1] === props.date.month.month && today[2] === props.date.day.day && props.date.wday.wday !== "جمعه"){
           myStyle={
-            // backgroundColor: "DodgerBlue",
-            // border: "2px solid #d04514" ,
-            // borderRadius:"3px",
             padding: "2px",
             textAlign: "center",
             color: "#ff5722"
@@ -194,8 +166,6 @@ function Cell(props){
           myStyle={
               color : "black"
           }
-        
-         
       } 
   }
   return (<div className={sel} style={myStyle}>
@@ -204,10 +174,6 @@ function Cell(props){
             </div>
           </div>);
   }   
-
-
-
-
 
 
 class Calender extends React.Component{
@@ -267,13 +233,7 @@ class Calender extends React.Component{
       this.setState({
         scope : createPreMonth(day),
       })
-    
   }
-
-
-    onClick(){
-      
-    }
 
   render(){
     let list=this.state.scope.map((arr,index)=>{
@@ -293,19 +253,6 @@ class Calender extends React.Component{
   }
 }
 ReactDOM.render(<Calender cal={dataBase}/>,document.getElementById("root"));
-
-// var arabicNumbers = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];
-// $('.translate').text(function(i, v) {
-// 	var chars = v.split('');
-//     for (var i = 0; i < chars.length; i++) {
-//     	if (/\d/.test(chars[i])) {
-//         	chars[i] = arabicNumbers[chars[i]];
-//         }
-//     }
-//     return chars.join('');
-// })
-
-
 
 class MonthClick extends React.Component{
   constructor(props){
